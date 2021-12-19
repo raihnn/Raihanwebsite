@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experience</title>
+    <link rel="stylesheet" href="style4.css">
+  
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="experience.html">EXPERIENCE</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+	<li><a href="family.html">Family</a></li>
+	<li><a href="gallery.html">Gallery</a></li>
+       
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner"></div>
+  <div class="about">
+ <div class="content">
+      <h1><center>EXPERIENCE</H1>
+<center><p><font color ="white">I started working when I was 13 years old. I worked at a kids clothing store in the mall after school and on the weekends. I started working at an early age because my family needed the money. My mother raised five children on her own by holding two jobs, so we all had to help. I would go to school full time and work part-time. I feel that I know the value of money due to my work experiences. Once I start working, it was really hard to stop or cut back on the income that I was earning. I've always wanted to go back to college to get my degree, but I was not able to because I didn't want to make less money. I tried going to school part-time and working full time, but I was not able to do both. I think that if I had the opportunity to get an education first, I would do so before trying to earn a living, but in my situation, I had to work. On the other hand, I think it was good to have had the experience because it made me more discipline.   I started working due to necessity, but I think along the way luxury became my necessity. I feel that no matter how much I make, it was not enough because there is always something else I need to have. I believe it is about the lifestyle I chose to live which is influenced by the society we live in.</font></p>	
+
+
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+<style>
+  body {
+    height: 100vh;
+  background: url("razor.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+</body>
+</html>
